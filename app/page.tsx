@@ -1,17 +1,12 @@
 import Image from "next/image";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <div className="h-screen">
+    <div className="h-screen md:p-8">
 
       {/* header */}
-      <header className="p-4 flex justify-between items-center">
-        <div className="flex justify-center items-center">
-          <Image src='/images/logo-black.png' alt="arrow" width={60} height={61} className="w-6 mr-1.5"></Image>
-          <div className="text-2xl">Positivus</div>
-        </div>
-        <Image src='/images/menu.png' alt="arrow" width={52} height={37} className="w-6"></Image>
-      </header>
+      <Header></Header>
 
       {/* Navigating the digital landscape for success */}
       <section className="p-4">
