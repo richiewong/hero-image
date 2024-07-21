@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import Accordian from "@/components/Accordian";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       </section>
 
       <section className="hidden md:block md:flex md:flex-row">
-        <div className="">
+        <div>
           <div className="text-4xl font-medium leading-snug mb-8 lg:text-5xl lg:leading-snug xl:text-6xl xl:leading-normal">Navigating the digital landscape for success</div>
           <div className="mb-4">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</div>
           <div className="bg-black text-white text-center px-8 py-4 rounded-2xl hover:bg-[#191A23] cursor-pointer inline-block">Book a consultation</div>
@@ -298,18 +299,7 @@ export default function Home() {
           <div className="mb-4 md:w-1/2">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</div>
         </div>
 
-        <div className="bg-black rounded-[40px] text-white p-8 text-left">
-          <div>
-            <div className="border border-solid border-[#B9FF66] rounded-[40px] mb-10 px-6 py-8 relative">
-              <div>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</div>
-              <div className="absolute p-4 -bottom-4 left-10 h-4 w-4 rotate-45 border-b border-r border-solid border-[#B9FF66] bg-black"></div>
-            </div>
-            <div className="px-8">
-              <div className="font-medium text-[#B9FF66]">John Smith</div>
-              <div>Marketing Director at XYZ Corp</div>
-            </div>
-          </div>
-        </div>
+        <Testimonials></Testimonials>
       </section>
 
       {/* Contact Us */}
@@ -324,11 +314,11 @@ export default function Home() {
           <div className="md:w-1/2 md:ml-8">
             <div className="flex justify-between items-center px-4 mb-4 md:justify-start">
               <div className="flex justify-between items-center md:mr-8">
-                <input type="radio" name="contact" id="hi" className=""></input>
+                <input type="radio" name="contact" id="hi"></input>
                 <label htmlFor="hi" className="ml-4 flex items-center">Say hi</label>
               </div>
               <div className="flex justify-between items-center">
-                <input type="radio" name="contact" id="quote" className=""></input>
+                <input type="radio" name="contact" id="quote"></input>
                 <label htmlFor="quote" className="ml-4">Get a Quote</label>
               </div>
             </div>
