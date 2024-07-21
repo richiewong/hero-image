@@ -14,11 +14,11 @@ export default function Header() {
           <div className="text-2xl">Positivus</div>
         </div>
         <div className="hidden md:block">
-          <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4">About us</Link>
-          <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4">Services</Link>
-          <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4">Use Cases</Link>
-          <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4">Pricing</Link>
-          <Link href='/' className="mb-4 hover:bg-[#B9FF66] cursor-pointer mr-4">Blog</Link>
+          <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">About us</Link>
+          <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">Services</Link>
+          <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">Use Cases</Link>
+          <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">Pricing</Link>
+          <Link href='/' className="mb-4 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">Blog</Link>
           <Link href='/' className="border border-solid border-black rounded-2xl p-4 hover:bg-[#B9FF66] cursor-pointer dark:border-white dark:hover:text-black dark:hover:border-black">Request a quote</Link>
         </div>
         <Image src='/images/menu.png' alt="arrow" width={52} height={37} className="w-6 md:hidden dark:invert" onClick={toggleMenu}></Image>
