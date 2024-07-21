@@ -28,16 +28,12 @@ export default function Home() {
 
       {/* Company Logos */}
       <div className="p-4 flex gap-4 flex-wrap mb-8 md:justify-around relative">
-        <div className="flex gap-4">
-          <Image src='/images/company-logo-0.png' alt="Company logo" width={497} height={192} className="w-24 grayscale"></Image>
-          <Image src='/images/company-logo-1.png' alt="Company logo" width={506} height={192} className="w-24 grayscale"></Image>
-          <Image src='/images/company-logo-2.png' alt="Company logo" width={515} height={192} className="w-24 grayscale"></Image>
-        </div>
-        <div className="flex gap-4">
-          <Image src='/images/company-logo-3.png' alt="Company logo" width={584} height={192} className="w-24 grayscale"></Image>
-          <Image src='/images/company-logo-4.png' alt="Company logo" width={502} height={192} className="w-24 grayscale"></Image>
-          <Image src='/images/company-logo-5.png' alt="Company logo" width={443} height={192} className="w-24 grayscale"></Image>
-        </div>
+        <Image src='/images/company-logo-0.png' alt="Company logo" width={497} height={192} className="w-24 grayscale"></Image>
+        <Image src='/images/company-logo-1.png' alt="Company logo" width={506} height={192} className="w-24 grayscale"></Image>
+        <Image src='/images/company-logo-2.png' alt="Company logo" width={515} height={192} className="w-24 grayscale"></Image>
+        <Image src='/images/company-logo-3.png' alt="Company logo" width={584} height={192} className="w-24 grayscale"></Image>
+        <Image src='/images/company-logo-4.png' alt="Company logo" width={502} height={192} className="w-24 grayscale"></Image>
+        <Image src='/images/company-logo-5.png' alt="Company logo" width={443} height={192} className="w-24 grayscale"></Image>
       </div>
 
       {/* Services */}
