@@ -139,7 +139,7 @@ export default function Home() {
           <div className="md:w-1/2">
             <div className="text-2xl font-medium inline-block px-2 rounded mb-4">Let’s make things happen</div>
             <div className="mb-8">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</div>
-            <div className="bg-black text-white text-center p-4 rounded-2xl hover:bg-[#191A23] cursor-pointer md:inline-block md:px-8">Get your <span className="hidden md:inline">free </span>proposal</div>
+            <div className="bg-black text-white text-center p-4 rounded-2xl hover:bg-[#191A23] cursor-pointer md:inline-block md:px-8 dark:hover:bg-1 dark:hover:text-black">Get your <span className="hidden md:inline">free </span>proposal</div>
           </div>
           <Image src='/images/illustration-2.png' alt="illustration" width={359} height={395} className="hidden md:block absolute md:right-0 md:h-full md:top-0 lg:right-[10%] lg:-top-[10%] lg:h-[120%] w-auto"></Image>
         </div>
