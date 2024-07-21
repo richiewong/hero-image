@@ -313,14 +313,16 @@ export default function Home() {
           {/* radio button */}
           <div className="md:w-1/2 md:ml-8">
             <div className="flex justify-between items-center px-4 mb-4 md:justify-start">
-              <div className="flex justify-between items-center md:mr-8">
-                <input type="radio" name="contact" id="hi"></input>
-                <label htmlFor="hi" className="ml-4 flex items-center">Say hi</label>
-              </div>
-              <div className="flex justify-between items-center">
-                <input type="radio" name="contact" id="quote"></input>
-                <label htmlFor="quote" className="ml-4">Get a Quote</label>
-              </div>
+              <label htmlFor="hi" className="flex justify-between items-center cursor-pointer md:mr-8">
+                <input type="radio" name="contact" id="hi" className="peer hidden"></input>
+                <div className="relative w-6 h-6 border border-solid border-black rounded-full mr-4 w-32 box-border before:hidden peer-checked:before:block peer-checked:before:border-[#B9FF66] peer-checked:before:text-[#B9FF66] before:content-['·'] before:text-[100px] before:absolute before:top-1/4 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:text-black dark:border-white"></div>
+                <div>Say hi</div>
+              </label>
+              <label htmlFor="quote" className="flex justify-between items-center cursor-pointer">
+                <input type="radio" name="contact" id="quote" className="peer hidden"></input>
+                <div className="relative w-6 h-6 border border-solid border-black rounded-full mr-4 w-32 box-border before:hidden peer-checked:before:block peer-checked:before:border-[#B9FF66] peer-checked:before:text-[#B9FF66] before:content-['·'] before:text-[100px] before:absolute before:top-1/4 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:text-black dark:border-white"></div>
+                <div>Get a Quote</div>
+              </label>
             </div>
 
             <div className="mb-4">Name</div>
