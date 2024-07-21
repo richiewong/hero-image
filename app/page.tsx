@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/Header";
+import Accordian from "@/components/Accordian";
 
 export default function Home() {
   return (
@@ -148,7 +149,7 @@ export default function Home() {
       </section>
 
       {/* Case Studies */}
-      <section className="text-center">
+      <section className="text-center md:mb-12">
         <div className="p-4 md:flex md:items-center md:mb-8 md:text-left">
           <div className="text-3xl font-medium bg-1 inline-block px-2 rounded mb-4 md:mr-8">Case Studies</div>
           <div className="mb-4 md:w-1/2">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</div>
@@ -177,7 +178,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
       </section>
 
       {/* Our Working Process */}
@@ -196,41 +196,12 @@ export default function Home() {
 
 
         <div className="text-left">
-          <div className="flex justify-between items-center border-solid border-black border border-b-[6px] rounded-[40px] mb-4 p-6 bg-3">
-            <div className="text-3xl font-medium">01</div>
-            <div className="text-lg font-medium px-4">Consultation</div>
-            <div className="border border-black border-solid rounded-full w-8 h-8 min-w-8 min-h-8 inline-block flex items-center justify-center text-3xl font-medium">+</div>
-          </div>
-          
-          <div className="flex justify-between items-center border-solid border-black border border-b-[6px] rounded-[40px] mb-4 p-6 bg-3">
-            <div className="text-3xl font-medium">02</div>
-            <div className="text-lg font-medium px-4">Research and Strategy Development</div>
-            <div className="border border-black border-solid rounded-full w-8 h-8 min-w-8 min-h-8 inline-block flex items-center justify-center text-3xl font-medium">+</div>
-          </div>
-
-          <div className="flex justify-between items-center border-solid border-black border border-b-[6px] rounded-[40px] mb-4 p-6 bg-3">
-            <div className="text-3xl font-medium">03</div>
-            <div className="text-lg font-medium px-4">Implementation</div>
-            <div className="border border-black border-solid rounded-full w-8 h-8 min-w-8 min-h-8 inline-block flex items-center justify-center text-3xl font-medium">+</div>
-          </div>
-
-          <div className="flex justify-between items-center border-solid border-black border border-b-[6px] rounded-[40px] mb-4 p-6 bg-3">
-            <div className="text-3xl font-medium">04</div>
-            <div className="text-lg font-medium px-4">Monitoring and Optimization</div>
-            <div className="border border-black border-solid rounded-full w-8 h-8 min-w-8 min-h-8 inline-block flex items-center justify-center text-3xl font-medium">+</div>
-          </div>
-          
-          <div className="flex justify-between items-center border-solid border-black border border-b-[6px] rounded-[40px] mb-4 p-6 bg-3">
-            <div className="text-3xl font-medium">05</div>
-            <div className="text-lg font-medium px-4">Reporting and Communication</div>
-            <div className="border border-black border-solid rounded-full w-8 h-8 min-w-8 min-h-8 inline-block flex items-center justify-center text-3xl font-medium">+</div>
-          </div>
-
-          <div className="flex justify-between items-center border-solid border-black border border-b-[6px] rounded-[40px] mb-4 p-6 bg-3">
-            <div className="text-3xl font-medium">06</div>
-            <div className="text-lg font-medium px-4">Continual Improvement</div>
-            <div className="border border-black border-solid rounded-full w-8 h-8 min-w-8 min-h-8 inline-block flex items-center justify-center text-3xl font-medium">+</div>
-          </div>
+          <Accordian index="01" title="Consultation" content="During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."></Accordian>
+          <Accordian index="02" title="Research and Strategy Development" content="During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."></Accordian>
+          <Accordian index="03" title="Implementation" content="During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."></Accordian>
+          <Accordian index="04" title="Monitoring and Optimization" content="During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."></Accordian>
+          <Accordian index="05" title="Reporting and Communication" content="During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."></Accordian>
+          <Accordian index="06" title="Continual Improvement" content="During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."></Accordian>
         </div>
         
       </section>
