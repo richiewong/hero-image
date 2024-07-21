@@ -68,7 +68,7 @@ export default function Home() {
             </div>
               <div className="flex items-center">
                 <Image src='/images/arrow-black.png' alt="arrow" width={98} height={98} className="w-12 md:mr-4"></Image>
-                <div className="hidden lg:block cursor-pointer hover:text-1 dark:text-black dark:hover:text-white">Learn more</div>
+                <div className="hidden lg:block cursor-pointer hover:text-1 dark:text-black hover:text-white">Learn more</div>
               </div>
             <Image src='/images/services-2.png' alt="arrow" width={210} height={167} className="w-32 absolute bottom-10 right-10"></Image>
           </div>
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
               <div className="flex items-center">
                 <Image src='/images/arrow-black.png' alt="arrow" width={98} height={98} className="w-12 md:mr-4"></Image>
-                <div className="hidden lg:block cursor-pointer hover:text-1 dark:text-black dark:hover:text-white">Learn more</div>
+                <div className="hidden lg:block cursor-pointer hover:text-1 dark:text-black hover:text-white">Learn more</div>
               </div>
             <Image src='/images/services-5.png' alt="arrow" width={210} height={167} className="w-32 absolute bottom-10 right-10"></Image>
           </div>
