@@ -19,7 +19,7 @@ export default function Header() {
           <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4">Use Cases</Link>
           <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4">Pricing</Link>
           <Link href='/' className="mb-4 hover:bg-[#B9FF66] cursor-pointer mr-4">Blog</Link>
-          <Link href='/' className="border border-solid border-black rounded-2xl p-4 hover:bg-[#B9FF66] cursor-pointer">Request a quote</Link>
+          <Link href='/' className="border border-solid border-black rounded-2xl p-4 hover:bg-[#B9FF66] cursor-pointer dark:border-white dark:hover:text-black dark:hover:border-black">Request a quote</Link>
         </div>
         <Image src='/images/menu.png' alt="arrow" width={52} height={37} className="w-6 md:hidden dark:invert" onClick={toggleMenu}></Image>
       </div>
@@ -40,7 +40,7 @@ export default function Header() {
               <Link href='/' className="block mb-2 hover:bg-[#B9FF66] dark:hover:text-black cursor-pointer">Use Cases</Link>
               <Link href='/' className="block mb-2 hover:bg-[#B9FF66] dark:hover:text-black cursor-pointer">Pricing</Link>
               <Link href='/' className="block mb-4 hover:bg-[#B9FF66] dark:hover:text-black cursor-pointer">Blog</Link>
-              <Link href='/' className="block border border-solid border-black rounded-2xl p-4 hover:bg-[#B9FF66] dark:hover:text-black cursor-pointer">Request a quote</Link>
+              <Link href='/' className="block border border-solid border-black rounded-2xl p-4 hover:bg-[#B9FF66] dark:hover:text-black cursor-pointer dark:border-white dark:hover:text-black dark:hover:border-black">Request a quote</Link>
             </div>
           </div>
           <div className="flex-1 bg-[#191A23] opacity-80" onClick={toggleMenu}></div>
