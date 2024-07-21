@@ -8,7 +8,7 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   return (
     <header>
-      <div className="p-4 flex justify-between items-center h-16 md:p-0">
+      <div className="p-4 flex justify-between items-center h-16 md:p-0 md:mb-16">
         <div className="flex justify-center items-center">
           <Image src='/images/logo-black.png' alt="arrow" width={60} height={61} className="w-6 mr-1.5"></Image>
           <div className="text-2xl">Positivus</div>
