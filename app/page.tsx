@@ -324,11 +324,11 @@ export default function Home() {
             </div>
 
             <div className="mb-4">Name</div>
-            <input className="mb-4 w-full border border-solid border-black p-4 rounded-xl" placeholder="Name"></input>
+            <input className="mb-4 w-full border border-solid border-black p-4 rounded-xl dark:text-black" placeholder="Name"></input>
             <div className="mb-4">Email</div>
-            <input className="mb-4 w-full border border-solid border-black p-4 rounded-xl" placeholder="Email"></input>
+            <input className="mb-4 w-full border border-solid border-black p-4 rounded-x dark:text-black" placeholder="Email"></input>
             <div className="mb-4">Message</div>
-            <textarea className="mb-4 w-full border border-solid border-black p-4 rounded-xl" placeholder="Message" rows={4}></textarea>
+            <textarea className="mb-4 w-full border border-solid border-black p-4 rounded-xl dark:text-black" placeholder="Message" rows={4}></textarea>
             <div className="bg-black text-white p-4 rounded-2xl hover:bg-[#191A23] cursor-pointer text-center hidden md:block dark:bg-white dark:text-black dark:hover:bg-1 dark:hover:text-black">Send Message</div>
           </div>
 
