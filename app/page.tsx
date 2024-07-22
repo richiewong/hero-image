@@ -306,7 +306,7 @@ export default function Home() {
       <section className="text-center p-4 mb-16 dark:text-black">
         <div className="p-4 md:flex md:items-center md:mb-8 md:text-left">
           <div className="text-3xl font-medium bg-1 inline-block px-2 rounded mb-4 md:mr-8 dark:text-black">Contact Us</div>
-          <div className="mb-4 md:w-1/2">Connect with Us: Let's Discuss Your Digital Marketing Needs</div>
+          <div className="mb-4 md:w-1/2">Connect with Us: Let&apos;s Discuss Your Digital Marketing Needs</div>
         </div>
 
         <div className="bg-3 rounded-[40px] p-8 mb-8 text-left md:flex md:justify-between relative dark:bg-2 dark:text-white">
