@@ -11,7 +11,7 @@ export default function Home() {
       <Header></Header>
 
       {/* Navigating the digital landscape for success */}
-      <section className="md:hidden p-4">
+      <section className="md:hidden p-4 mt-16">
         <div className="text-4xl font-medium leading-snug">Navigating the digital landscape for success</div>
         <Image src='/images/illustration.png' alt="illustration" width={601} height={515} className="w-full"></Image>
         <div className="mb-4">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</div>

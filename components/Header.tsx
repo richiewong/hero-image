@@ -8,44 +8,27 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   return (
     <header>
-      <div className="p-4 flex justify-between items-center h-16 md:p-0 md:mb-16">
+      <div className="p-4 flex justify-between items-center h-16 fixed top-0 left-0 right-0 z-10 bg-white dark:bg-black md:p-0 md:mb-16 md:static">
         <div className="flex justify-center items-center">
           <Image src='/images/logo-black.png' alt="arrow" width={60} height={61} className="w-6 mr-1.5 dark:invert"></Image>
           <div className="text-2xl">Positivus</div>
         </div>
-        <div className="hidden md:block">
+        <nav className={`absolute top-16 left-0 right-0 flex flex-col p-4 backdrop-blur-sm bg-white/80 dark:bg-black/80 shadow-2xl transition ease-in-out duration-400 ${isMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'} md:block md:static md:visible md:opacity-100 md:shadow-none`}>
           <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">About us</Link>
           <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">Services</Link>
           <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">Use Cases</Link>
           <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">Pricing</Link>
           <Link href='/' className="mb-4 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">Blog</Link>
           <Link href='/' className="border border-solid border-black rounded-2xl p-4 hover:bg-[#B9FF66] cursor-pointer dark:border-white dark:hover:text-black dark:hover:border-black">Request a quote</Link>
+        </nav>
+        <div onClick={toggleMenu} className="md:hidden cursor-pointer select-none">
+          {
+            isMenuOpen
+              ? <div className="text-4xl">×</div>
+              : <Image src='/images/menu.png' alt="arrow" width={52} height={37} className="w-6 md:hidden dark:invert"></Image>
+          }
         </div>
-        <Image src='/images/menu.png' alt="arrow" width={52} height={37} className="w-6 md:hidden dark:invert" onClick={toggleMenu}></Image>
       </div>
-      {
-        isMenuOpen &&
-        <div className="fixed top-0 left-0 right-0 bottom-0 z-10 flex flex-col transition-all duration-300 ease-in-out md:hidden">
-          <div className="bg-white opacity-100 z-20 dark:bg-black">
-            <div className="p-4 flex justify-between items-center h-16">
-              <div className="flex justify-center items-center">
-                <Image src='/images/logo-black.png' alt="arrow" width={60} height={61} className="w-6 mr-1.5 dark:invert"></Image>
-                <div className="text-2xl">Positivus</div>
-              </div>
-              <div className="text-4xl" onClick={toggleMenu}>×</div>
-            </div>
-            <div className="p-4">
-              <Link href='/' className="block mb-2 hover:bg-[#B9FF66] dark:hover:text-black cursor-pointer">About us</Link>
-              <Link href='/' className="block mb-2 hover:bg-[#B9FF66] dark:hover:text-black cursor-pointer">Services</Link>
-              <Link href='/' className="block mb-2 hover:bg-[#B9FF66] dark:hover:text-black cursor-pointer">Use Cases</Link>
-              <Link href='/' className="block mb-2 hover:bg-[#B9FF66] dark:hover:text-black cursor-pointer">Pricing</Link>
-              <Link href='/' className="block mb-4 hover:bg-[#B9FF66] dark:hover:text-black cursor-pointer">Blog</Link>
-              <Link href='/' className="block border border-solid border-black rounded-2xl p-4 hover:bg-[#B9FF66] dark:hover:text-black cursor-pointer dark:border-white dark:hover:text-black dark:hover:border-black">Request a quote</Link>
-            </div>
-          </div>
-          <div className="flex-1 bg-[#191A23] opacity-80" onClick={toggleMenu}></div>
-        </div>
-      }
     </header>
   );
 }
