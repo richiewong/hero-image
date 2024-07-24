@@ -13,7 +13,7 @@ export default function Header() {
           <Image src='/images/logo-black.png' alt="arrow" width={60} height={61} className="w-6 mr-1.5 dark:invert"></Image>
           <div className="text-2xl">Positivus</div>
         </div>
-        <nav className={`absolute top-16 left-0 right-0 flex flex-col p-4 backdrop-blur-sm bg-white/80 dark:bg-black/80 shadow-2xl transition ease-in-out duration-400 ${isMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'} md:block md:static md:visible md:opacity-100 md:shadow-none`}>
+        <nav className={`absolute top-16 left-0 right-0 flex flex-col p-4 backdrop-blur-sm bg-white/80 dark:bg-black/80 shadow-2xl transition-all ease-in-out duration-300 ${isMenuOpen ? 'visible opacity-100 h-fit' : 'invisible opacity-0 h-0'} md:h-fit md:block md:static md:visible md:opacity-100 md:shadow-none`}>
           <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">About us</Link>
           <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">Services</Link>
           <Link href='/' className="mb-2 hover:bg-[#B9FF66] cursor-pointer mr-4 dark:hover:text-black">Use Cases</Link>
