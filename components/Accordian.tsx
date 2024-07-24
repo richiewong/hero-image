@@ -19,7 +19,7 @@ export default function Accordian({ index, title, content }:Props) {
           {isOpen ? '×' : '+'}
         </div>
       </div>
-      <div className={`${isOpen ? 'opacity-100 dark:border-black mt-8 pt-8 h-fit' : 'opacity-0'} overflow-hidden h-0 border-t border-black text-left transition-all ease-in-out duration-300`}>{content}</div>
+      <div className={`${isOpen ? 'opacity-100 dark:border-black mt-8 pt-8 h-auto' : 'opacity-0'} overflow-hidden h-0 border-t border-black text-left transition-all ease-in-out duration-300`}>{content}</div>
     </div>
   );
 }
